@@ -1,0 +1,133 @@
+body{
+    background-color: #393939;
+}
+h1{
+    font-size:300%;
+    display:fixed;
+    margin-top:-150px;
+    text-align:center;
+    color: #ddd;
+    
+}
+.home-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* vertical centering */
+    align-items: center;      /* horizontal centering */
+    text-align: center;
+    background-color: #0c0c0c;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    overflow: hidden;
+  position: relative;
+  }
+  .typing-header {
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    animation: typing 2.5s steps(20, end), blink-caret 0.8s step-end infinite;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: top 1s ease, transform 1s ease;
+  }
+  
+  .typing-header.moved {
+    top: 30px;
+    transform: translateY(0);
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 20ch;
+    }
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    animation: blink-caret 0.8s step-end infinite;
+  }
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+  .name, .home-link {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay: 2s;
+}
+.name{
+    
+    margin-top:150px;
+    
+
+}
+.home-input {
+    padding: 10px;
+    font-size: 1rem;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    margin-left:auto;
+    width: 500px;
+    height:35px;
+  }
+  
+  .home-link {
+    margin-top: 5%;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 0px;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent; /* Transparent background */
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .home-link:hover {
+    background-color: #d90520;
+    color: white;
+  }
+  
+  .home-link.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    border-color: #777;
+    color: #ccc;
+  }
+  
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+input{
+    margin-left:-400px;
+    text-align:center;
+    border-radius:25px;
+    width:1000px;
+    height:100px;
+    font-size: 150%;
+
+}

@@ -1,0 +1,35 @@
+Frontend(react with vite)
+1. Set-ExecutionPolicy RemoteSigned -Scope Process
+2. npm create vite@latest voicebox-client --template react
+3. cd voicbox-client
+4. npm install socket.io-client
+5. npm install
+6. npm install react-router-dom
+
+Backend(node.js with express and Socket.io)
+mkdir voicebox-server && cd voicebox-server
+npm init -y
+npm install express socket.io cors dotenv
+
+
+Step 1: Start the Backend (Node.js + Socket.IO)
+Navigate to the backend folder:
+
+cd voicebox-server
+npm install
+
+Run the backend server:
+node server.js
+or use Nodemon for automatic restarts:
+npx nodemon server.js
+✅ Your backend is now running on http://localhost:4000 🚀
+
+Step 2: Start the Frontend (React Vite)
+Open a new terminal and navigate to the frontend folder:
+
+cd ../voicebox-client
+npm install
+Run the React app:
+npm run dev
+Open the app in your browser:
+Vite will show a URL in the terminal (usually http://localhost:5173). Open it in your browser.
